@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+requests = ">=2.20.0"
+simplejson = ">=3.10.0"
+enum34 = ">=1.1.6"
+pyRofex = "*"
+websocket_client = ">=0.54.0"
+
+[requires]
+python_version = "3.7"
