@@ -49,8 +49,8 @@ def iniciar(ticker2, REMARKETS_USER, REMARKET_PASS, REMARKET_ACCOUNT):
         try:
             md["marketData"]["BI"][0]["price"]
         except KeyError:
-         # en este caso reemplace el valor constante de 75.25 por un valor que cuando se hable del dolar septiembre el valor sea de 75.25 en el bid ofertado. 
-         # Pero que si hablamos de otro activo (otro instrumento) este se mantenga en un valor competitivo para la oferta/demanda.
+         # In this case, replace the constant value of 75.25 by a value that when talking about the September dollar the value is 75.25 in the bid offered.
+         # But if we talk about another asset (another instrument) this remains at a competitive value for supply / demand.
             pyRofex.send_order(ticker=ticker2, side=pyRofex.Side.BUY, size=1,
                                price=lp - 0.91, order_type=pyRofex.OrderType.LIMIT)
             print("No hay Bids Activos")
