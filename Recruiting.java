@@ -35,13 +35,13 @@ private static BigInteger compute(long n){ // aca creo una varibale biginteger p
 
 }
   public static void main(String[] args) {
-     for(long n: new long[]{1L,2L,3L,2017L,2018L,2005L,2019L}){
+     for(long n: new long[]{1L,2L,2017L,2018L,2005L}){
          System.out.println(""+ n + ":"+ compute(n));
      }
  }     
     /*  Para finalizar el programa compruebo que se repite cada 2017 veces el mod con n=1,n=2 y n=2017,n=2018
         luego con el valor de compute(2017) cuando n es 2017 hallo h=2005 y luego para saber el resultado calculo compute(2005)
-        el resultado es 1551.
+        el resultado es 1015.
   */
 }
 
